@@ -68,8 +68,8 @@ def ordering():
     print(url)
     driver.get(url)
     try:
-        Email = "estore@topsandbottomsusa.com"
-        password = "TopBot.786#"
+        Email = ""
+        password = ""
         wait.until(ec.presence_of_element_located((By.CSS_SELECTOR,"#okta-signin-username"))).click()
         driver.find_element(By.CSS_SELECTOR,"#okta-signin-username").send_keys(Keys.CONTROL+'a')
         driver.find_element(By.CSS_SELECTOR,"#okta-signin-username").send_keys(Email)
